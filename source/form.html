@@ -10,23 +10,22 @@
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Логотип компании Пинк">
       </a>
       <nav class="main-nav">
+        <!-- Скрывается при раскрытии пунктов меню -->
         <button class="main-nav__toggle-open" type="button">Открыть меню</button>
+        <button class="main-nav__toggle-close hidden" type="button" aria-label="Закрыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <button class="main-nav__toggle-close" type="button" aria-label="Закрыть меню"></button>
-            </li>
-            <li class="site-list__item ">
+            <li class="site-list__item site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a>Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -62,7 +61,7 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link-academy" href="#"></a>
+          <a class="copyright__link-academy" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </div>
     </footer>
