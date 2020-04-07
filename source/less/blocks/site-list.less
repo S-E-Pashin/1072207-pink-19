@@ -1,12 +1,26 @@
+.site-list {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .site-list__item {
+  width: 320px;
+  min-height: 63px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 32px;
   text-align: center;
-  color: #ffffff;
+  color: @text_main_color;
   list-style: none;
+  box-shadow: 0 1px 0 0 @shadow_menu_first, inset 0 -1px 0 0 @text_second_color;
 }
 
 .site-list__item a {
-  color: #ffffff;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+  color: @text_main_color;
 }
