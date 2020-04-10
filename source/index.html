@@ -83,33 +83,32 @@
       </section>
       <section class="reviews">
         <div class="reviews__sliders">
-          <div class="reviews__first">
+          <div class="reviews__first reviews__item">
             <p class="reviews__title">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews__second">
-            <p class="reviews__title visually_hidden">Николай Петров</p>
+          <div class="reviews__second reviews__item visually_hidden">
+            <p class="reviews__title">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
-          <div class="reviews__third visually_hidden">
+          <div class="reviews__third reviews__item visually_hidden">
             <p class="reviews__title">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
           <div class="reviews__switch-box">
-            <ul>
-              <li><button class="reviews__switch-slide reviews__activ-slide" type="button" value="slider_first"><span class="visually_hidden">Отзыв первый</span></button></li>
-              <li><button class="reviews__switch-slide" type="button" value="slider_second"><span class="visually_hidden">Отзыв второй</span></button></li>
-              <li><button class="reviews__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Отзыв третий</span></button></li>
-            </ul>
+            <button class="reviews__switch-slide reviews__switch-slide--active" type="button" value="slider_first"><span class="visually_hidden">Отзыв первый</span></button>
+            <button class="reviews__switch-slide" type="button" value="slider_second"><span class="visually_hidden">Отзыв второй</span></button>
+            <button class="reviews__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Отзыв третий</span></button>
           </div>
         </div>
       </section>
-      <section class="prices">
+      <!-- Переигрываю в поток -->
+      <!-- <section class="prices">
         <table class="prices__table">
-          <tr>  <th></th> <th><p>Стандарт</p><span>3,99 USD</span></th> <th></th> </tr>
-          <tr>  <td></td> <td><p>Розовый фильтр</p></td> <td></td> </tr>
-          <tr>  <td></td> <td><p>Смайлики</p></td> <td></td> </tr>
-          <tr>  <td></td> <td><p>Комментарии</p></td> <td></td> </tr>
+          <tr>  <th><p>Стандарт</p><span>3,99 USD</span></th>   <th></th>    <th></th>         </tr>
+          <tr>  <td><p>Розовый фильтр</p>               </td>   <td></td>    <td></td>         </tr>
+          <tr>  <td><p>Смайлики</p>                     </td>   <td></td>    <td></td>         </tr>
+          <tr>  <td><p>Комментарии</p>                  </td>   <td></td>    <td></td>         </tr>
         </table>
         <div class="prices__switch-box">
           <ul>
@@ -118,7 +117,83 @@
             <li><button class="prices__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Третье предложение</span></button></li>
           </ul>
         </div>
+      </section> -->
+      <section class="prices">
+        <div class="prices__list">
+
+          <div class="prices__column princes__column-product">
+            <div class="prices__item-head">
+              <p></p>
+            </div>
+            <div class="prices__product">
+              <p>Розовый фильтр</p>
+            </div>
+            <div class="prices__product">
+              <p>Смайлики</p>
+            </div>
+            <div class="prices__product">
+              <p>Комментарии</p>
+            </div>
+          </div>
+
+          <div class="prices__column">
+            <div class="prices__item-head">
+              <p>База</p><span>1,99 USD</span>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Розовый фильтр</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Смайлики</p></div>
+              <div class="prices__item-off"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Комментарии</p></div>
+              <div class="prices__item-off"></div>
+            </div>
+          </div>
+
+          <div class="prices__column">
+            <div class="prices__item-head">
+              <p>Стандарт</p><span>3,99 USD</span>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Розовый фильтр</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Смайлики</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Комментарии</p></div>
+              <div class="prices__item-off"></div>
+            </div>
+          </div>
+
+          <div class="prices__column">
+            <div class="prices__item-head">
+              <p>Анлим</p><span>9,99 USD</span>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Розовый фильтр</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Смайлики</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+            <div class="prices__item">
+              <div class="prices__item-name"><p>Комментарии</p></div>
+              <div class="prices__item-on"></div>
+            </div>
+          </div>
+
+        </div>
       </section>
+
+
     </main>
     <footer class="page-footer">
       <section class="info">
