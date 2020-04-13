@@ -1,4 +1,5 @@
 .tool {
+  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,10 +112,10 @@
 }
 // обертка для переключателя ползунков и ползунков
 .tool__selector-ranges {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: start;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   // width: px;
   // height: px;
   // margin-top: 0px;
@@ -139,13 +140,13 @@
 }
 // обертка для переключателей
 .tool__selector-wrapper {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: start;
-  // align-items: center;
-  // width: px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
   // height: px;
-  // margin-top: 0px;
+  margin-top: 42px;
   // margin-right: 0px;
   // margin-bottom: 0px;
   // margin-left: 0px;
@@ -165,7 +166,7 @@
   // border: 1px solid @;
   // border-radius: 3px;
 }
-// tool__selector
+
 .tool__selector {
   // display: flex;
   // flex-direction: row;
@@ -192,14 +193,32 @@
   // background-image: url("");
   // border: 1px solid @;
   // border-radius: 3px;
+
+  fill: @selector_base_color;
+}
+
+.tool__selector--active {
+  fill: @text_third_color;
+}
+
+.tool__selector-crop {
+//
+}
+
+.tool__selector-fill {
+//
+}
+
+.tool__selector-contrast {
+//
 }
 
 
 .tool__ranges {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: start;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   // width: px;
   // height: px;
   // margin-top: 0px;
@@ -220,6 +239,35 @@
   // background-color: @;
   // background-image: url("");
   // border: 1px solid @;
+  // border-radius: 3px;
+}
+
+.tool__range {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 240px;
+  height: 70px;
+  // margin-top: 0px;
+  // margin-right: 0px;
+  // margin-bottom: 0px;
+  // margin-left: 0px;
+  // padding-top: 0px;
+  // padding-right: 0px;
+  // padding-bottom: 0px;
+  // padding-left: 0px;
+
+  // font-size: px;
+  // line-height: px;
+  // font-weight: 400;
+  // text-align: center;
+  // color: @;
+
+  // background-color: @;
+  // background-image: url("");
+  border-bottom: 1px solid @border_second_color;
   // border-radius: 3px;
 }
 
@@ -252,6 +300,7 @@
 }
 
 .tool__range-controls {
+  position: relative;
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
@@ -278,14 +327,14 @@
   // border: 1px solid @;
   // border-radius: 3px;
 }
-
+// линия ползунка
 .tool__scale {
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
-  // width: px;
-  // height: px;
+  width: 240px;
+  height: 2px;
   // margin-top: 0px;
   // margin-right: 0px;
   // margin-bottom: 0px;
@@ -301,11 +350,10 @@
   // text-align: center;
   // color: @;
 
-  // background-color: @;
+  background-color: @bg_main_color;
   // background-image: url("");
   // border: 1px solid @;
   // border-radius: 3px;
-
 }
 
 .tool__bar {
@@ -337,16 +385,20 @@
 }
 
 .tool__toggle {
+  position: absolute;
+  top: -7px;
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
-  // width: px;
-  // height: px;
+  width: 10px;
+  height: 10px;
   // margin-top: 0px;
   // margin-right: 0px;
   // margin-bottom: 0px;
   // margin-left: 0px;
+  // padding: 0;
+  // margin: 0;
   // padding-top: 0px;
   // padding-right: 0px;
   // padding-bottom: 0px;
@@ -358,13 +410,16 @@
   // text-align: center;
   // color: @;
 
-  // background-color: @;
+  background-color: @bg_second_color;
   // background-image: url("");
-  // border: 1px solid @;
-  // border-radius: 3px;
+  border: 2px solid @text_third_color;
+  border-radius: 50%;
+
+  box-sizing: content-box;
 }
 
 .tool__toggle-crop {
+  left: 200px;
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
@@ -394,6 +449,7 @@
 }
 
 .tool__fill {
+  display: none;
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
@@ -447,11 +503,11 @@
   // background-image: url("");
   // border: 1px solid @;
   // border-radius: 3px;
-
 }
 
 .tool__toggle-fill {
-    // display: flex;
+  left: 20px;
+  // display: flex;
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
@@ -480,7 +536,8 @@
 }
 
 .tool__contrast {
-    // display: flex;
+  display: none;
+  // display: flex;
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
@@ -505,10 +562,10 @@
   // background-image: url("");
   // border: 1px solid @;
   // border-radius: 3px;
-
 }
 
 .tool__toggle-contrast {
+  left: 40%;
     // display: flex;
   // flex-direction: row;
   // justify-content: start;
@@ -566,7 +623,7 @@
 }
 
 .tool__action-upload {
-    // display: flex;
+  // display: flex;
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
@@ -612,7 +669,7 @@
 
   font-size: 18px;
   line-height: 18px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   color: @text_third_color;
   // background-color: @;
@@ -671,7 +728,7 @@
 
   font-size: 18px;
   line-height: 18px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   color: @bg_main_color;
   // background-color: @;
