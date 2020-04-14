@@ -83,6 +83,7 @@
 }
 
 .form__message {
+  width: 320px;
   // display: flex;
   // flex-direction: row;
   // justify-content: start;
@@ -291,6 +292,7 @@
 
   background-color: @bg_second_color;
   // background-image: url("");
+  border: none;
   // border: 1px solid @;
   // border-radius: 3px;
 }
@@ -611,7 +613,15 @@
   // background-color: @;
   // background-image: url("");
   // border: 1px solid @;
+  border: none;
   // border-radius: 3px;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 .form__contact-phone-label-class {
@@ -697,6 +707,7 @@
   // background-color: @;
   // background-image: url("");
   // border: 1px solid @;
+  border: none;
   // border-radius: 3px;
 }
 
@@ -734,6 +745,7 @@
   // background-color: @;
   // background-image: url("");
   // border: 1px solid @;
+  list-style: none;
   // border-radius: 3px;
 }
 
@@ -798,7 +810,10 @@
   // flex-direction: row;
   // justify-content: start;
   // align-items: center;
-  // width: px;
+  // display: block;
+  // disabled
+  border: none;
+  width: 320px;
   // height: px;
   // margin-top: 0px;
   // margin-right: 0px;
@@ -828,6 +843,10 @@
   text-align: center;
   color: @text_third_color;
   text-transform: uppercase;
+}
+
+.form__textarea textarea {
+  // border: none;
 }
 
 .form__textarea-emotion {
@@ -943,5 +962,14 @@
 
 .form__note span {
   color: @text_third_color;
+}
+
+@media (min-width: @tablet_width) {
+
+}
+
+@media (min-width: @desktop_width) {
+
+
 }
 //

@@ -8,4 +8,33 @@
   box-shadow: 0 1px 0 0 @shadow_menu_first, inset 0 -1px 0 0 @text_second_color;
   background-color: @bg_main_color;
 }
+
+@media (min-width: @tablet_width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 660px;
+  }
+
+  .page-header__logo {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 1200px;
+  }
+  .page-header__logo {
+    width: 400px;
+    box-shadow: none;
+  }
+}
+
 //
