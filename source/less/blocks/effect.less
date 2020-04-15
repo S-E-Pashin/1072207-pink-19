@@ -1,0 +1,118 @@
+.effect {
+  display: none;
+}
+
+
+@media (min-width: @tablet_width) {
+  .effect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 660px;
+    // height: px;
+    // margin-top: 0px;
+    // margin-right: 0px;
+    // margin-bottom: 0px;
+    // margin-left: 0px;
+    // Убрать отступ позже.
+    padding-top: 10px;
+    // padding-right: 0px;
+    // padding-bottom: 0px;
+    // padding-left: 0px;
+
+    // font-size: px;
+    // line-height: px;
+    // font-weight: 400;
+    // text-align: center;
+    // color: @;
+
+    background-color: @text_main_color;
+    // background-image: url("");
+    // border: 1px solid @;
+    // border-radius: 3px;
+  }
+
+  .effect__clock-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 238px;
+    height: 276px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px;
+  }
+
+  .effect__clock {
+    width: 180px;
+    height: 180px;
+    margin-top: 33px;
+
+    font-size: 96px;
+    line-height: 149.5px;
+    font-weight: 700;
+    text-align: center;
+    color: @text_third_color;
+
+    border: 10px solid @text_third_color;
+    border-radius: 50%;
+  }
+
+  .effect__info {
+    width: 295px;
+  }
+
+  .effect__header {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: left;
+    color: @text_second_color;
+  }
+
+  .effect__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: @bg_main_color;
+  }
+
+  .effect__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    color: @text_third_color;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .effect {
+    width: 1200px;
+    background-color: @bg_second_color;
+  }
+
+  .effect__clock-wrapper {
+    margin-left: 131px;
+  }
+
+  .effect__info {
+    margin-right: 179px;
+  }
+
+  .effect__header {
+    flex-direction: row;
+  }
+
+  .effect__header-element {
+    padding-right: 5px;
+  }
+}
+//

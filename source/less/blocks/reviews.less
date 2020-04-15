@@ -29,6 +29,13 @@
   align-items: center;
 }
 
+.reviews__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
 .reviews__item {
   display: flex;
   flex-direction: column;
@@ -137,11 +144,43 @@
 }
 
 @media (min-width: @tablet_width) {
+  .reviews {
+    width: 660px;
+  }
 
+  .reviews__slider {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .reviews__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .reviews__text {
+    width: 617px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .reviews__switch-box {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop_width) {
-
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 405px;
+  }
 
 }
 //

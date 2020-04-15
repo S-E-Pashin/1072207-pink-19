@@ -95,11 +95,61 @@
 }
 
 @media (min-width: @tablet_width) {
+  .info {
+    width: 660px;
+  }
 
+  .info__phone-email-address-wrapper {
+    flex-direction: column;
+    width: 237px;
+    height: 263px;
+    margin-top: 44px;
+  }
+
+  .info__phone-email-wrapper {
+    flex-direction: row;
+    width: 600px;
+    height: 126px;
+  }
+
+  .info__map {
+
+
+    width: 660px;
+
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position-y: -442px;
+  }
 }
 
 @media (min-width: @desktop_width) {
+  .info {
+    width: 1200px;
+  }
 
+  .info__phone-email-address-wrapper {
+    position: relative;
+    flex-direction: row;
+    width: 1000px;
+    height: 263px;
+    margin-top: 44px;
+  }
 
+  .info__phone-email-wrapper {
+    flex-direction: row;
+    width: 1000px;
+    height: 126px;
+  }
+
+  .info__address {
+    position: absolute;
+    left: 400px;
+  }
+
+  .info__map {
+    width: 1200px;
+    height: 680px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
 }
 //
