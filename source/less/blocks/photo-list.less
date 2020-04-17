@@ -78,6 +78,56 @@
 }
 
 @media (min-width: @tablet_width) {
+  .photo-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  // .photo-list__image-panorama-day {
+  //   width: 100%;
+  // }
+
+  .photo-list__item--active {
+    width: 100%;
+  }
+
+  .photo-list__item--active img {
+    height: 509px;
+  }
+
+  .photo-list__item--active .photo-list__item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+    height: 120px;
+    padding-top: 30px;
+  }
+
+  .photo-list__item--active .photo-list__item-header {
+    width: 50%;
+    margin: 0;
+    order: 1;
+  }
+
+  .photo-list__item--active .photo-list__item-comment {
+    width: 602px;
+    height: 47px;
+    margin: 0;
+    order: 3;
+  }
+
+  .photo-list__item--active .photo-list__item-counter {
+    width: 50%;
+    margin: 0;
+    padding-right: 50px;
+    order: 2;
+    text-align: right;
+  }
 
 }
 

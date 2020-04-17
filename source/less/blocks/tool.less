@@ -1,10 +1,8 @@
 .tool {
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
   height: 700px;
   // margin-top: 0px;
   // margin-right: 0px;
@@ -84,10 +82,10 @@
 }
 // обертка для переключателей, ползунков, кнопок действий
 .tool__ranges-action-wrapper {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: start;
-  // align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   // width: px;
   // height: px;
   // margin-top: 0px;
@@ -738,12 +736,82 @@
 }
 
 @media (min-width: @tablet_width) {
+  .tool {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 511px;
+  }
 
+  .tool__image {
+    margin: 0;
+  }
+
+  .tool__selector-ranges {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tool__selector-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 182px;
+    margin-top: 0px;
+  }
+
+  .tool__range {
+    display: flex;
+  }
+
+  .tool__selector {
+    fill: @text_third_color;
+  }
+
+  .tool__ranges-action-wrapper {
+    // width: ;
+
+    // flex-direction: row;
+    // justify-content: space-between;
+    height: 376px;
+  }
+
+  .tool__action {
+    justify-content: flex-end;
+    height: 164px;
+  }
 }
 
 @media (min-width: @desktop_width) {
+  .tool__ranges-action-wrapper {
+    width: 410px;
+  }
 
+  .tool__selector-ranges {
+    width: 100%;
+  }
 
+  .tool__action {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 164px;
+    width: 100%;
+  }
+
+  .tool__button-upload {
+    padding-top: 20px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  .tool__button-reset {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-right: 54px;
+    padding-bottom: 20px;
+    padding-left: 58px;
+  }
 }
 
 

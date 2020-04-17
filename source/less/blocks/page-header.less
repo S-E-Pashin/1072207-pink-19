@@ -1,5 +1,11 @@
 .page-header {
+  width: auto;
+}
+
+.page-header__wrapper {
   width: 320px;
+  margin: 0 auto;
+
   background-color: @bg_main_color;
 }
 
@@ -10,7 +16,7 @@
 }
 
 @media (min-width: @tablet_width) {
-  .page-header {
+  .page-header__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -24,11 +30,12 @@
 }
 
 @media (min-width: @desktop_width) {
-  .page-header {
+  .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: 960px;
   }
+
   .page-header__logo {
     width: 400px;
     box-shadow: none;

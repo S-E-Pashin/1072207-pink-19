@@ -1,4 +1,6 @@
 body {
+  width: 100%;
+  // margin: 0 auto;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -40,4 +42,18 @@ input[type="radio"].visually_hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-//
+// Комментирую для нахождения лучшего решения.
+@media (min-width: @tablet_width) {
+  body {
+    // margin: 0 auto;
+    // width: auto;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  body {
+    // margin: 0 auto;
+    // width: 960px;
+  }
+}
+// //

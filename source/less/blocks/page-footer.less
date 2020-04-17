@@ -1,5 +1,6 @@
 .page-footer {
-  width: 320px;
+  margin: 0 auto;
+  // width: 320px;
 }
 
 .page-footer__wrapper {
@@ -12,12 +13,16 @@
   .page-footer {
     width: 660px;
   }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop_width) {
   .page-footer {
-    width: 1200px;
+    width: 960px;
   }
-
 }
 //
