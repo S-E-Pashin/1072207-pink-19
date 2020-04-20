@@ -1,9 +1,18 @@
 .promo {
   min-height: 400px;
-
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: @bg_third_color;
+  width: 280px;
+  margin: 0 auto;
+  // background-color: @bg_third_color;
   background-repeat: no-repeat;
+}
+
+.promo__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
 }
 
 .promo__header {
@@ -16,12 +25,19 @@
   text-align: center;
   color: @text_main_color;
 }
-@media (min-width: @tablet_width) {
 
+@media (min-width: @tablet_width) {
+  .promo__wrapper {
+    width: 300px;
+    margin: 0;
+    background-image: none;
+  }
 }
 
 @media (min-width: @desktop_width) {
-
+  .promo__wrapper {
+    height: 200px;
+  }
 
 }
 //

@@ -1,10 +1,19 @@
-.effect {
+.effect__wrapper {
   display: none;
 }
 
 
 @media (min-width: @tablet_width) {
   .effect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: @text_main_color;
+  }
+
+  .effect__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,6 +40,7 @@
     // background-image: url("");
     // border: 1px solid @;
     // border-radius: 3px;
+
   }
 
   .effect__clock-wrapper {
@@ -95,6 +105,10 @@
 
 @media (min-width: @desktop_width) {
   .effect {
+    background-color: @bg_second_color;
+  }
+
+  .effect__wrapper {
     width: 960px;
     background-color: @bg_second_color;
   }

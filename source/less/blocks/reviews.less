@@ -1,10 +1,14 @@
 .reviews {
-  width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   // height: px;
   margin-top: 0px;
-  // margin-right: px;
+  // margin-right: auto;
   // margin-bottom: px;
-  // margin-left: px;
+  // margin-left: auto;
   // padding-top: px;
   // padding-right: px;
   // padding-bottom: px;
@@ -27,6 +31,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 280px;
 }
 
 .reviews__slider {
@@ -144,8 +149,8 @@
 }
 
 @media (min-width: @tablet_width) {
-  .reviews {
-    width: 660px;
+  .reviews__sliders {
+    width: 620px;
   }
 
   .reviews__slider {
@@ -174,11 +179,8 @@
 
 @media (min-width: @desktop_width) {
   .reviews {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 960px;
     height: 405px;
   }
 
