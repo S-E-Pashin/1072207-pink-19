@@ -1,3 +1,28 @@
 .promo-application {
-  width: 320px;
+  min-width: 280px;
+}
+
+@media (min-width: @tablet_width) {
+  .promo-application {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-content: ;
+    width: 620px;
+    // width: 100%;
+    margin: 0 auto;
+    // background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // background-size: 100% 100%;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .promo-application {
+    height: 743px;
+  }
+
+
 }

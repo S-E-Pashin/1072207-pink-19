@@ -1,0 +1,47 @@
+.promo-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 230px;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: @bg_third_color;
+  background-repeat: no-repeat;
+  background-position: center -94px;
+  background-size: 100% 600px;
+}
+
+.promo-form__header {
+  width: 228px;
+  margin-top: 0;
+  padding-top: 28px;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: @text_main_color;
+}
+
+@media (min-width: @tablet_width) {
+  .promo-form {
+    height: 308px;
+  }
+
+  .promo-form__header {
+    width: 477px;
+    height: 168px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .promo-form__header {
+    width: 750px;
+  }
+
+}
+//

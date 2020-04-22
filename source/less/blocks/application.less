@@ -1,13 +1,25 @@
 .application {
   min-height: 389px;
   margin-top: 48px;
+  width: 100%;
+  // background-color: @bg_third_color;
+}
 
-  background-color: @bg_third_color;
+.application__wrapper-big {
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+
+}
+
+.application__wrapper {
+  margin-top: 57px;
+
 }
 
 .application__download {
-  margin-left: 20px;
-  padding: 20px 40px;
+  // margin-left: 20px;
+  padding: 20px 32px;
 
   font-size: 18px;
   font-weight: 700;
@@ -19,9 +31,6 @@
   border-radius: 35px;
 }
 
-.application__wrapper {
-  margin-top: 57px;
-}
 
 .application__available {
   font-size: 14px;
@@ -29,5 +38,20 @@
   line-height: 24px;
   text-align: center;
   color: @text_main_color;
+}
+
+@media (min-width: @tablet_width) {
+  .application {
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+@media (min-width: @desktop_width) {
+  .application {
+    height: 350px;
+  }
+
 }
 //

@@ -1,8 +1,17 @@
 .prices {
-  width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   background-color: @bg_second_color;
-
   overflow: hidden;
+}
+
+.prices__wrapper {
+  width: 280px;
+  //Скрываю, не видно что тянется, правильно ли?
+  // overflow: hidden;
 }
 
 .prices__table {
@@ -135,4 +144,37 @@
   border: 3px solid #283645;
   box-sizing: content-box;
 }
+
+@media (min-width: @tablet_width) {
+  .prices__wrapper {
+    width: 660px;
+  }
+
+  .prices__table {
+    transform: translateX(-167px) scale(0.65);
+  }
+
+  .prices__item-name {
+    display: none;
+  }
+
+  .prices__switch-box {
+    display: none;
+  }
+
+  }
+
+
+@media (min-width: @desktop_width) {
+  .prices__wrapper {
+    width: 960px;
+  }
+
+
+  .prices__table {
+    transform: translateX(53px) scale(1);
+  }
+
+  }
+
 //
