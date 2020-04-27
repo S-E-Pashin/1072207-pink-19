@@ -1,6 +1,6 @@
 .application {
   min-height: 389px;
-  margin-top: 48px;
+  margin-top: 46px;
   width: 100%;
   // background-color: @bg_third_color;
 }
@@ -13,14 +13,19 @@
 }
 
 .application__wrapper {
-  margin-top: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 49px;
 
 }
 
 .application__download {
-  // margin-left: 20px;
-  padding: 20px 32px;
-
+  padding-top: 11px;
+  padding-right: 35px;
+  padding-bottom: 14px;
+  padding-left: 36px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -33,6 +38,10 @@
 
 
 .application__available {
+  margin-top: 22px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -46,11 +55,52 @@
     height: 300px;
   }
 
+  .application__wrapper-big {
+    width: 300px;
+  }
+
+  .application__download {
+    padding-right: 45px;
+    padding-left: 46px;
+  }
+
+  .application__wrapper {
+    margin-top: 63px;
+  }
+
+  .application__available {
+    margin-top: 37px;
+    font-size: 18px;
+  }
 }
 
 @media (min-width: @desktop_width) {
   .application {
+    margin-top: 40px;
+    width: 303px;
     height: 350px;
+  }
+
+  .application__wrapper-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // width: 302px;
+  }
+
+  .application__wrapper {
+    height: 159px;
+    margin-top: 67px;
+  }
+
+  .application__download {
+    width: 300px;
+    padding-top: 14px;
+    padding-right: 0px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    font-size: 21px;
   }
 
 }

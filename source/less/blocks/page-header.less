@@ -17,8 +17,10 @@
   justify-content: center;
   align-items: center;
   min-width: 100%;
+  height: 70px;
   background-color: @bg_main_color;
   box-shadow: 0 1px 0 0 @shadow_menu_first, inset 0 -1px 0 0 @text_second_color;
+  // background-color: red;
 }
 
 .page-header__logo {
@@ -27,7 +29,15 @@
   justify-content: start;
   align-items: center;
   width: 280px;
-  height: 66px;
+  // может быть должна быть ширина авто для подстройки свг согласно ширины?
+  height: 65px;
+  // background-color: gold;
+}
+
+.page-header__logo-image {
+  width: 75px;
+  height: 24px;
+  // background-color: blue;
 }
 
 @media (min-width: @tablet_width) {
@@ -39,6 +49,10 @@
     min-width: 620px;
   }
 
+  .page-header__logo-wrapper {
+    height: 110px;
+  }
+
   .page-header__logo {
     min-width: 620px;
   }
@@ -46,20 +60,22 @@
 
 @media (min-width: @desktop_width) {
   .page-header {
-    background-color: @bg_main_color;
+    background-color: @bg_fourth_color;
     margin-left: 0;
+    // background-color: blue;
   }
 
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
-
+    background-color: transparent;
   }
 
   .page-header__logo-wrapper {
     min-width: 150px;
     box-shadow: none;
+    background-color: transparent;
   }
 
   .page-header__logo {
