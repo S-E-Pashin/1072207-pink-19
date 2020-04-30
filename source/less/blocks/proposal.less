@@ -1,10 +1,15 @@
 .proposal {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 164px;
 }
 
 .proposal__text {
   width: 244px;
-  margin: 60px auto;
+  height: 75px;
+  margin: 0;
 
   font-size: 14px;
   font-weight: 400;
@@ -14,16 +19,25 @@
 }
 
 @media (min-width: @tablet_width) {
+  .proposal {
+    height: 227px;
+  }
+
   .proposal__text {
     width: 438px;
+    margin-top: 29px;
     font-size: 18px;
   }
 }
 
 @media (min-width: @desktop_width) {
+  .proposal {
+    height: 230px;
+    background-color: @text_main_color;
+  }
+
   .proposal__text {
     width: 575px;
   }
-
 }
 //

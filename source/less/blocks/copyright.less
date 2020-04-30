@@ -5,8 +5,9 @@
   justify-content: space-between;
   align-items: center;
   width: 131px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 17px;
+  margin-bottom: 40px;
+  background-color: blue;
 }
 
 .copyright__text {
@@ -18,21 +19,30 @@
 }
 
 .copyright__link-academy {
-  position: relative;
-  content: "";
-  width: 30px;
-  height: 35px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: ;
+  width: 29px;
+  height: 28px;
+  fill: @text_third_color;
 }
 
 @media (min-width: @tablet_width) {
+  .copyright {
+    margin: 0;
+  }
 
+  .copyright__link-academy {
+    width: 29px;
+  }
 }
 
 @media (min-width: @desktop_width) {
+  .copyright {
+    width: 157px;
+    // margin: 0px 0px 0px 0px;
+  }
 
+  .copyright__text {
+    font-size: 18px;
+  }
 
 }
 //

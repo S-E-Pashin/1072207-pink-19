@@ -6,41 +6,41 @@
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
+  <body class="body-page-foto">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип компании Пинк">
-        </a>
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo">
+            <div class="page-header__logo-image-wrapper">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип компании Пинк">
+            </div>
+          </a>
+        </div>
         <nav class="main-nav">
           <button class="main-nav__toggle-open main-nav__toggle-close visually_hidden" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="main-nav__item">
-                <a>Конкурс</a>
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="#">Конкурс</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item-academy">
                 <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
 
     <main class="page-main">
       <div class="page-main__wrapper">
-        <section class="promo-form__wrapper"><!-- необходимость класса под вопросом.-->
-          <article class="promo-form">
-            <h2 class="promo-form__header">Конкурс на самое безбашенное <span>путешествие с Пинк</span></h2>
-          </article>
-        </section>
+        <article class="promo-form">
+          <h2 class="promo-form__header">Конкурс на самое безбашенное <span>путешествие с Пинк</span></h2>
+        </article>
         <section class="form">
           <div class="form__title">
             <p class="form__title-text">
@@ -149,7 +149,7 @@
         <div class="logo-pink">
           <img class="logo-pink__img" src="img/logo-pink-blue-mobile.svg" width="100" height="50" alt="Логотип Компании Пинк">
         </div>
-        <div class="page-footer-social">
+        <div class="page-footer__social">
           <ul class="social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link-twitter" href="#" aria-label="Ссылка на Твиттер">
