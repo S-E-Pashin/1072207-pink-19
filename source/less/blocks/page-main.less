@@ -1,15 +1,12 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   width: 100%;
   margin: 0 auto;
 }
 
 .page-main__wrapper {
-  min-width: 280px;
-  // margin: 0 auto;
+  min-width: 320px;
   background-color: @bg_third_color;
 }
 
@@ -20,19 +17,15 @@
     margin: 0 auto;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position-x: -320px;
-    background-position-y: -169px;
-    background-size: 200% 43%;
+    background-position: center -110px;
+    background-size: 1200px 726px;
   }
 }
 
 @media (min-width: @desktop_width) {
   .page-main__wrapper {
     min-width: 940px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position-x: -640px;
-    background-position-y: -123px;
-    background-size: 230% 39%;
+    background-image: none;
+    background-color: transparent;
   }
 }
-//

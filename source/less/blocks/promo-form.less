@@ -1,47 +1,52 @@
 .promo-form {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
-
-  height: 230px;
-
+  height: 170px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: @bg_third_color;
   background-repeat: no-repeat;
-  background-position: center -94px;
-  background-size: 100% 600px;
+  background-position: center -69px;
+  background-size: 100% 468px;
 }
 
 .promo-form__header {
   width: 228px;
-  margin-top: 0;
-  padding-top: 28px;
-
+  padding-top: 9px;
   font-size: 24px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 29px;
   text-align: center;
   color: @text_main_color;
 }
 
 @media (min-width: @tablet_width) {
   .promo-form {
-    height: 308px;
+    // height: 308px;
+    height: 329px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -110px;
+    background-size: 1200px 726px;
   }
 
   .promo-form__header {
     width: 477px;
     height: 168px;
+    padding-top: 27px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 }
 
 @media (min-width: @desktop_width) {
-  .promo-form__header {
-    width: 750px;
+  .promo-form {
+    height: 284px;
+    background-image: none;
   }
 
+  .promo-form__header {
+    width: 750px;
+    padding-top: 21px;
+  }
 }
 //

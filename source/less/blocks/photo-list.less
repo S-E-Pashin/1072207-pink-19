@@ -1,4 +1,10 @@
 .photo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0;
   padding-left: 0;
 
   list-style: none;
@@ -10,34 +16,61 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
-  margin: 20px auto;
+  margin-top: 22px;
   // background-color: @bg_second_color;
 }
 
 .photo-list__item--active {
+  position: relative;
+  margin-top: 0;
   width: 100%;
 }
 
-.photo-list__item-image {
+.photo-list__item--active .photo-list__image::before {
+  position: absolute;
+  content: "ПАНОРАМА ДНЯ";
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  padding: 6px 0 0 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: @text_main_color;
+  background-color: @text_third_color;
+}
+
+.photo-list__image {
   height: 180px;
 }
 
 .photo-list__image-panorama-day {
   width: 100%;
+  height: 137px;
 }
 
-.photo-list__image {
-  // width: 100%;
+.photo-list__image-panorama-day img {
+  width: 100%;
+  height: 100%;
 }
+
 
 .photo-list__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 280px;
+  // height: 100%;
+  // margin-bottom: 18px;
   background-color: @bg_second_color;
 }
 
 .photo-list__item-header {
   width: 280px;
-  margin-top: 25px;
+  margin: 18px 0 0 0;
+  // margin-top: 25px;
   padding-left: 17px;
 
   font-size: 12px;
@@ -58,6 +91,8 @@
 }
 
 .photo-list__item-comment {
+  width: 100%;
+  margin: 0 0 0 0;
   padding-left: 17px;
 
   font-size: 14px;
@@ -68,9 +103,9 @@
 }
 
 .photo-list__item-counter {
-  margin-top: 20px;
-  margin-bottom: 28px;
-  padding-left: 50px;
+  width: 280px;
+  margin: 0;
+  padding: 9px 0 18px 49px;
 
   font-size: 12px;
   font-weight: 400;
@@ -78,21 +113,86 @@
   text-align: left;
   text-transform: uppercase;
   color: @text_third_color;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 15px;
 }
+
+.photo-list__item-plane {
+  margin-top: 24px;
+}
+// .photo-list__item--active .photo-list__item-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   width: 280px;
+//   // margin-bottom: 18px;
+//   // height: 193px;
+//   background-color: @bg_second_color;
+// }
+
+// .photo-list__item--active .photo-list__item-header {
+//   width: 280px;
+//   margin: 18px 0 0 0;
+//   // margin-top: 25px;
+//   padding-left: 17px;
+
+//   font-size: 12px;
+//   font-weight: 300;
+//   line-height: 24px;
+//   text-align: left;
+//   text-transform: uppercase;
+//   color: @bg_main_color;
+// }
+
+// .photo-list__item--active .photo-list__item-name {
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 24px;
+//   text-align: left;
+//   text-transform: none;
+//   color: @bg_main_color;
+// }
+
+// .photo-list__item--active .photo-list__item-comment {
+//   margin: 0 0 0 0;
+//   padding-left: 17px;
+
+//   font-size: 14px;
+//   font-weight: 400;
+//   line-height: 24px;
+//   text-align: left;
+//   color: @bg_main_color;
+// }
+
+// .photo-list__item--active .photo-list__item-counter {
+//   width: 280px;
+//   margin: 0;
+//   padding: 9px 0 0 49px;
+
+//   font-size: 12px;
+//   font-weight: 400;
+//   line-height: 24px;
+//   text-align: left;
+//   text-transform: uppercase;
+//   color: @text_third_color;
+// }
+
 
 @media (min-width: @tablet_width) {
   .photo-list {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0;
   }
 
   .photo-list__item {
     width: 310px;
     height: 455px;
-    margin: 20px 0 0 0;
+    margin: 17px 5px 3px 5px;
   }
 
   .photo-list__item-wrapper {
@@ -115,67 +215,124 @@
   }
 
   .photo-list__item-header {
-    // margin: 0;
-    // padding: 0;
+    margin: 24px 0 0 0;
+    padding-left: 27px;
   }
 
   .photo-list__item-comment {
+    width: 259px;
+    height: 100%;
     margin: 0;
+    padding-left: 27px;
     // padding: 0;
   }
 
   .photo-list__item-counter {
     margin: 0;
-    padding: 0;
+    padding: 13px 0 21px 27px;
+    height: 58px;
+    background-position: 255px 18px;
   }
 
   .photo-list__item--active {
+    margin: 0;
     width: 100%;
+    height: 664px;
   }
 
-  .photo-list__item--active img {
-    height: 509px;
+  .photo-list__item--active .photo-list__image {
+    width: 100%;
+    height: 510px;
   }
+
+  // .photo-list__item--active img {
+  //   width: 100%;
+  // }
 
   .photo-list__item--active .photo-list__item-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 620px;
-    height: 120px;
-    padding-top: 30px;
+    width: 617px;
+    height: 121px;
+    padding-top: 24px;
   }
 
   .photo-list__item--active .photo-list__item-header {
     width: 50%;
     margin: 0;
+    padding-left: 25px;
     order: 1;
   }
 
   .photo-list__item--active .photo-list__item-comment {
-    width: 602px;
+    width: 617px;
     height: 47px;
-    margin: 0;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 26px;
     order: 3;
   }
 
   .photo-list__item--active .photo-list__item-counter {
     width: 50%;
+    height: 25px;
     margin: 0;
-    padding-right: 50px;
+    padding: 1px 58px 0 0;
     order: 2;
     text-align: right;
+    background-position: 268px 7px;
+  }
+
+  .photo-list__item--active .photo-list__image::before {
+    top: 58px;
+    right: 20px;
+    padding: 6px 0 0 0;
   }
 }
 
 @media (min-width: @desktop_width) {
   .photo-list__item {
-    height: 555px;
+    height: 588px;
   }
 
   .photo-list__image {
     height: 400px;
+  }
+
+  .photo-list__item--active {
+    height: 635px;
+  }
+
+  .photo-list__item--active .photo-list__image {
+    height: 506px;
+  }
+
+  .photo-list__item--active .photo-list__item-wrapper {
+    width: 940px;
+    height: 96px;
+  }
+
+  .photo-list__item--active .photo-list__item-header {
+    padding-left: 27px;
+  }
+
+  .photo-list__item--active .photo-list__item-counter {
+    height: 25px;
+    padding: 1px 61px 0 0;
+    background-position: 426px 6px;
+  }
+
+  .photo-list__item--active .photo-list__item-comment {
+    width: 940px;
+    height: 28px;
+    margin: 0 0 19px 0;
+    padding: 0 0 0 27px;
+  }
+
+  .photo-list__item--active .photo-list__image::before {
+    top: 54px;
+    right: 10px;
   }
 }
 //
