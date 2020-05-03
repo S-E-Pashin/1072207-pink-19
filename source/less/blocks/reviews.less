@@ -4,26 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // height: px;
   margin-top: 0;
-  // margin-right: auto;
-  // margin-bottom: px;
-  // margin-left: auto;
-  // padding-top: px;
-  // padding-right: px;
-  // padding-bottom: px;
-  // padding-left: px;
-
-  // font-size: px;
-  // line-height: px;
-  // font-weight: 400;
-  // text-align: center;
-  // color: @;
-
   background-color: @text_main_color;
-  // background-image: url("");
-  // border: 1px solid @;
-  // border-radius: 3px;
 }
 
 .reviews__sliders {
@@ -49,51 +31,29 @@
 }
 
 .reviews__title {
-  // width: px;
-  // height: px;
   margin-top: 0;
-  // margin-right: px;
   margin-bottom: 0;
-  // margin-left: px;
-  padding-top: 44px;
-  // padding-right: px;
-  padding-bottom: 25px;
-  // padding-left: px;
-
+  padding-top: 41px;
+  padding-bottom: 13px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  // text-align: center;
   color: @text_second_color;
+}
 
-  // background-color: @;
-  // background-image: url("");
-  // border: 1px solid @;
-  // border-radius: 3px;
+.reviews__title-signature {
+  display: none;
 }
 
 .reviews__text {
   width: 278px;
-  // height: px;
   margin-top: 0;
-  // margin-right: 0px;
   margin-bottom: 0;
-  // margin-left: 0px;
-  // padding-top: 0px;
-  // padding-right: 0px;
-  // padding-bottom: 0px;
-  // padding-left: 0px;
-
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
   color: @bg_main_color;
-
-  // background-color: @;
-  // background-image: url("");
-  // border: 1px solid @;
-  // border-radius: 3px;
 }
 
 .reviews__switch-box {
@@ -101,38 +61,18 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 56px;
+  width: 62px;
   height: 6px;
-  margin-top: 43px;
-  // margin-right: 0px;
+  margin-top: 33px;
   margin-bottom: 20px;
-  // margin-left: 0px;
-  // padding-top: 0px;
-  // padding-right: 0px;
-  // padding-bottom: 0px;
-  // padding-left: 0px;
-
-  // font-size: px;
-  // line-height: px;
-  // font-weight: 400;
-  // text-align: center;
-  // color: @;
-
-  // background-color: @;
-  // background-image: url("");
-  // border: 1px solid @;
-  // border-radius: 3px;
 }
 
 .reviews__switch-slide {
   width: 6px;
   height: 6px;
   padding: 0;
-
   background-color: @bg_main_color;
   opacity: 0.3;
-  // background-image: url("");
-  // border: 3px solid @bg_second_color;
   border-radius: 50%;
   box-sizing: content-box;
 }
@@ -144,6 +84,10 @@
   opacity: 1;
   border: 3px solid @bg_main_color;
   box-sizing: content-box;
+}
+
+.reviews__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet_width) {
@@ -159,19 +103,26 @@
   }
 
   .reviews__title {
+    padding-top: 35px;
+    padding-bottom: 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
   }
 
-  .reviews__text {
-    width: 617px;
-    font-size: 18px;
+  .reviews__title-signature {
+    display: block;
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 400;
     text-align: center;
+    color: @bg_main_color;
   }
 
-  .reviews__switch-box {
-    display: none;
+  .reviews__text {
+    width: 620px;
+    font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -179,7 +130,46 @@
   .reviews {
     flex-direction: row;
     justify-content: center;
-    height: 405px;
+    height: 418px;
+    padding-top: 49px;
+  }
+
+  .reviews__sliders {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    height: 327px;
+    padding-top: 50px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .reviews__first {
+    width: 693px;
+    height: 225px;
+  }
+
+  .reviews__switch-box {
+    display: none;
+  }
+
+  .reviews__toggle {
+    display: block;
+    padding-bottom: 45px;
+    fill: @toggle_first_color;
+  }
+
+  .reviews__text {
+    width: 690px;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+  }
+
+  .reviews__title-signature {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
-//

@@ -119,9 +119,14 @@
 
         <section class="reviews">
           <div class="reviews__sliders">
+            <div class="reviews__toggle reviews__toggle-left">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
+            </div>
             <div class="reviews__slider reviews__first reviews__item">
-              <p class="reviews__slider reviews__title">Николай Петров</p>
-              <p class="reviews__slider reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__slider reviews__title"><span class="reviews__title-signature">25 лет, водитель трамвая</span>Николай Петров</p>
+              <p class="reviews__slider reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со&nbsp;своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="reviews__second reviews__item visually_hidden">
               <p class="reviews__title">Николай Петров</p>
@@ -136,11 +141,35 @@
               <button class="reviews__switch-slide" type="button" value="slider_second"><span class="visually_hidden">Отзыв второй</span></button>
               <button class="reviews__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Отзыв третий</span></button>
             </div>
+            <div class="reviews__toggle reviews__toggle-left">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              </svg>
+
+            </div>
+
           </div>
         </section>
 
         <!-- Переигрываю в поток -->
         <section class="prices">
+          <div class="prices__wrapper">
+            <table class="prices__table">
+              <tr class="prices__header-wrapper"> <th class="prices__head-product">                </th>       <th class="prices__item-head"><p>База</p><span>1,99 USD</span>                                                </th>            <th class="prices__item-head prices__item-head--hit"><p>Стандарт</p><span>3,99 USD</span>                                            </th>  <th class="prices__item-head">                     <p>Анлим</p><span>9,99 USD</span>                         </th> </tr>
+              <tr class="prices__row-wrapper"   > <td class="prices__product"><p>Розовый фильтр</p></td>       <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Розовый фильтр</span><span class="prices__item-on" ></span></p></td>            <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Розовый фильтр</span><span class="prices__item-on "></span></p></td>  <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Розовый фильтр</span><span class="prices__item-on"></span></p></td> </tr>
+              <tr class="prices__row-wrapper"   > <td class="prices__product"><p>Смайлики      </p></td>       <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Смайлики      </span><span class="prices__item-off"></span></p></td>            <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Смайлики      </span><span class="prices__item-on "></span></p></td>  <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Смайлики      </span><span class="prices__item-on"></span></p></td> </tr>
+              <tr class="prices__row-wrapper"   > <td class="prices__product"><p>Комментарии   </p></td>       <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Комментарии   </span><span class="prices__item-off"></span></p></td>            <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Комментарии   </span><span class="prices__item-off"></span></p></td>  <td class="prices__item"><p class="prices__item-name-wrapper"><span class="prices__item-name">Комментарии   </span><span class="prices__item-on"></span></p></td> </tr>
+            </table>
+            <ul class="prices__switch-box">
+              <li><button class="prices__switch-slide" type="button" value="slider_first"><span class="visually_hidden">Первое предложение</span></button></li>
+              <li><button class="prices__switch-slide prices__switch-slide--active " type="button" value="slider_second"><span class="visually_hidden">Второе предложение</span></button></li>
+              <li><button class="prices__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Третье предложение</span></button></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Старый код таблицы -->
+        <!-- <section class="prices">
           <div class="prices__wrapper">
             <table class="prices__table">
               <tr class="prices__header-wrapper"> <th><div class="prices__head-product">                </div></th>       <th><div class="prices__item-head">                    <p>База</p><span>1,99 USD</span>                                          </div></th>            <th><div class="prices__item-head">                               <p>Стандарт      </p><span>3,99 USD</span>                     </div></th>  <th><div class="prices__item-head">                               <p>Анлим</p><span>9,99 USD</span>                             </div></th> </tr>
@@ -154,7 +183,8 @@
               <li><button class="prices__switch-slide" type="button" value="slider_third"><span class="visually_hidden">Третье предложение</span></button></li>
             </ul>
           </div>
-        </section>
+        </section> -->
+        <!--  -->
       </div>
     </main>
     <footer class="page-footer">
