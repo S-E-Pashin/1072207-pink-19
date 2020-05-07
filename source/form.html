@@ -65,63 +65,67 @@
             <!--  -->
             <fieldset class="form__progress">
               <legend>Ваши безбашенные достижения в путешествии</legend>
+              <div class="form__progress-wrapper">
                 <div class="form__progress-group">
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__selfie-shark" type="checkbox" name="form__selfie-shark-name" value="form__selfie-shark" id="form__selfie-shark-id" checked>
+                  <input class="visually_hidden form__selfie-shark form__progress-input" type="checkbox" name="form__selfie-shark-name" value="form__selfie-shark" id="form__selfie-shark-id" checked>
                   <label for="form__selfie-shark-id" class="form__checkbox">Сделал селфи с акулой</label>
                 </div>
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__burned-beach" type="checkbox" name="form__burned-beach-name" value="form__burned-beach" id="form__burned-beach-id" checked>
+                  <input class="visually_hidden form__burned-beach form__progress-input" type="checkbox" name="form__burned-beach-name" value="form__burned-beach" id="form__burned-beach-id" checked>
                   <label for="form__selfie-shark-id" class="form__checkbox">Обгорел на пляже</label>
                 </div>
                 </div>
                 <div class="form__progress-group">
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__saw-norris" type="checkbox" name="form__saw-norris-name" value="form__saw-norris" id="form__saw-norris-id">
+                  <input class="visually_hidden form__saw-norris form__progress-input" type="checkbox" name="form__saw-norris-name" value="form__saw-norris" id="form__saw-norris-id">
                   <label for="form__selfie-shark-id" class="form__checkbox">Видел Чака Норриса</label>
                 </div>
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__bought-souvenirs" type="checkbox" name="form__bought-souvenirs-name" value="form__bought-souvenirs" id="form__bought-souvenirs-id">
+                  <input class="visually_hidden form__bought-souvenirs form__progress-input" type="checkbox" name="form__bought-souvenirs-name" value="form__bought-souvenirs" id="form__bought-souvenirs-id">
                   <label for="form__bought-souvenirs-id" class="form__checkbox">Накупил сувениров</label>
                 </div>
                 </div>
                 <div class="form__progress-group">
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__held-tower" type="checkbox" name="form__held-tower-name" value="form__held-tower" id="form__held-tower-id">
+                  <input class="visually_hidden form__held-tower form__progress-input" type="checkbox" name="form__held-tower-name" value="form__held-tower" id="form__held-tower-id" checked>
                   <label for="form__held-tower-id" class="form__checkbox">Удержал башню</label>
                 </div>
                 <div class="form__progress-item">
-                  <input class="visually_hidden form__trashed-hotel" type="checkbox" name="form__trashed-hotel-name" value="form__trashed-hotel" id="form__trashed-hotel-id">
+                  <input class="visually_hidden form__trashed-hotel form__progress-input" type="checkbox" name="form__trashed-hotel-name" value="form__trashed-hotel" id="form__trashed-hotel-id">
                   <label for="form__trashed-hotel-id" class="form__checkbox">Разгромил отель</label>
                 </div>
                 </div>
+              </div>
             </fieldset>
             <!--  -->
             <fieldset class="form__contact">
               <legend class="form__contact-legend">Контактная информация</legend>
-                <div class="form__contact-item">
-                  <label for="form-contact-phone-input-id" class="form__contact-phone-label-class">Номер телефона</label>
-                  <input type="tel" name="form-contact-phone-input" placeholder="Номер, пожалуйста" id="form-contact-phone-input-id">
+              <div class="form__contact-wrapper">
+                <div class="form__contact-item form__contact-item-phone">
+                    <label for="form-contact-phone-input-id" class="form__contact-phone-label-class">Номер телефона</label>
+                    <input type="tel" name="form-contact-phone-input" placeholder="Номер, пожалуйста" id="form-contact-phone-input-id">
                 </div>
-                <div class="form__contact-item">
-                  <label for="form-contact-email-input-id" class="form__contact-email-label-class">Адрес почты</label>
-                  <input type="email" name="form-contact-email-input" placeholder="Введите почту *" id="form-contact-email-input-id">
+                <div class="form__contact-item form__contact-item-email">
+                    <label for="form-contact-email-input-id" class="form__contact-email-label-class">Адрес почты</label>
+                    <input type="email" name="form-contact-email-input" placeholder="Введите почту *" id="form-contact-email-input-id">
                 </div>
+              </div>
             </fieldset>
             <!--  -->
             <fieldset class="form__system">
               <legend class="form__system-legend">С каким приложением путешествовали?</legend>
                   <ul class="form__system-list">
                     <li class="form__system-item">
-                      <input class="visually_hidden" type="radio" name="system" value="i-os" id="i-os-id" checked>
+                      <input class="visually_hidden form__radio-input" type="radio" name="system" value="i-os" id="i-os-id" checked>
                       <label for="i-os-id" class="form__radio">Pink для iOS</label>
                     </li>
                     <li class="form__system-item">
-                      <input class="visually_hidden" type="radio" name="system" value="android" id="android-id">
+                      <input class="visually_hidden form__radio-input" type="radio" name="system" value="android" id="android-id">
                       <label for="android-id" class="form__radio">Pink на Android</label>
                     </li>
                     <li class="form__system-item">
-                      <input class="visually_hidden" type="radio" name="system" value="windows-phone" id="windows-phone-id">
+                      <input class="visually_hidden form__radio-input" type="radio" name="system" value="windows-phone" id="windows-phone-id">
                       <label for="windows-phone-id" class="form__radio">Windows Phone</label></li>
                   </ul>
             </fieldset>
