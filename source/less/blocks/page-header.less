@@ -34,11 +34,22 @@
 .page-header__logo-image {
   width: 75px;
   height: 24px;
+  fill: @text_main_color;
+}
+
+.page-header__logo:hover .page-header__logo-image {
+  fill: @text_third_color;
+}
+
+.page-header__logo:active .page-header__logo-image {
+  fill: @text_third_color;
+  opacity: 0.3;
 }
 
 .page-header__logo-image-wrapper {
   width: 280px;
   height: 28px;
+  // background-color: red;
 }
 
 @media (min-width: @tablet_width) {
@@ -62,6 +73,11 @@
 
   .page-header__logo-image-wrapper {
     width: 620px;
+  }
+
+  .page-header__logo:active .page-header__logo-image {
+    fill: @text_main_color;
+    opacity: 0.3;
   }
 }
 

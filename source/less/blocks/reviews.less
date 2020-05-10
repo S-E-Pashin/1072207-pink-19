@@ -77,6 +77,14 @@
   box-sizing: content-box;
 }
 
+.reviews__switch-slide:hover {
+  opacity: 0.6;
+}
+
+.reviews__switch-slide:active {
+  opacity: 0.1;
+}
+
 .reviews__switch-slide--active {
   width: 6px;
   height: 6px;
@@ -157,7 +165,16 @@
   .reviews__toggle {
     display: block;
     padding-bottom: 45px;
-    fill: @toggle_first_color;
+    fill: @bg_main_color;
+    opacity: 0.3;
+  }
+
+  .reviews__toggle:hover {
+    opacity: 0.6;
+  }
+
+  .reviews__toggle:active {
+    opacity: 0.1;
   }
 
   .reviews__text {
