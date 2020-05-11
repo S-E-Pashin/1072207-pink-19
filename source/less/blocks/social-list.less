@@ -26,6 +26,16 @@
   fill: @text_third_color;
 }
 
+.social-list__item:hover {
+  border: 3px solid @bg_main_color;
+  // background-color: green;
+}
+
+.social-list__item:active {
+  border: 3px solid @bg_main_color;
+  opacity: 0.1;
+}
+
 @media (min-width: @tablet_width) {
   .social-list {
     width: 195px;

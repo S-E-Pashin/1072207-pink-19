@@ -4,13 +4,23 @@
   justify-content: center;
   align-items: center;
   width: 167px;
-  height: 108px;
+  height: 112px;
+  fill: @bg_main_color;
 }
 
 .logo-pink__img {
   width: 150px;
   height: 51px;
   padding-top: 10px;
+}
+
+.logo-pink:hover {
+  fill: @text_third_color;
+}
+
+.logo-pink:active {
+  fill: @bg_main_color;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet_width) {

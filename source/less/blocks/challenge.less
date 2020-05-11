@@ -10,13 +10,17 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  width: 253px;
-  height: 75px;
+  width: 260px;
+  height: 138px;
 }
 
 .challenge__text {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 38px 0 0 0;
+  padding-right: 4px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -26,7 +30,12 @@
 
 @media (min-width: @tablet_width) {
   .challenge__wrapper {
-    width: 421px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 425px;
+    height: 122px;
   }
 
   .challenge__text {
@@ -34,10 +43,13 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
+    padding: 0;
     font-size: 18px;
   }
 }
 
-// @media (min-width: @desktop_width) {
-// }
+@media (min-width: @desktop_width) {
+  .challenge__wrapper {
+    height: 85px;
+  }
+}
