@@ -5,7 +5,6 @@
 
 @media (min-width: @tablet_width) {
   .promo-application {
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,6 +15,10 @@
     background-repeat: no-repeat;
     background-position: -41px 73px;
     background-size: 701px 544px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 }
 
@@ -30,5 +33,9 @@
     background-position: 19px 99px;
     background-size: 1049px 644px;
     // background-image: none;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 }

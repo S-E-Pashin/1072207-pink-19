@@ -6,5 +6,10 @@
     background-position: center 0;
     // background-size: 2560px 853px;
     background-size: 266% 853px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 266% 873px;
+    }
   }
 }

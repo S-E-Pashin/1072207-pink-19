@@ -103,6 +103,10 @@
   background-repeat: no-repeat;
   background-size: 100% 1020px;
   background-position-y: -820px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 
 .info__map::before {
@@ -135,10 +139,6 @@
   // background-position: center -28px;
   background-size: 100%;
   // background-color: red;
-}
-
-.info__after {
-  display: none;
 }
 
 .info__cost:hover {
@@ -206,16 +206,15 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: 100% 1060px;
     background-position-y: -604px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   .info__map::after {
     top: 194px;
     left: 47.3%;
-  }
-
-  .info__after {
-    display: flex;
-    height: 127px;
   }
 }
 
@@ -246,6 +245,10 @@
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-size: 100% 751px;
     background-position-y: -258px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .info__map::before {
