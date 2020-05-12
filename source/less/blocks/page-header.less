@@ -52,6 +52,14 @@
   // background-color: red;
 }
 
+.page-header__logo-image-tablet {
+  display: none;
+}
+
+.page-header__logo-image-desktop {
+  display: none;
+}
+
 @media (min-width: @tablet_width) {
   .page-header__wrapper {
     display: flex;
@@ -73,11 +81,22 @@
 
   .page-header__logo-image-wrapper {
     width: 620px;
+    height: 58px;
   }
 
   .page-header__logo:active .page-header__logo-image {
     fill: @text_main_color;
     opacity: 0.3;
+  }
+
+  .page-header__logo-image-mobile {
+    display: none;
+  }
+
+  .page-header__logo-image-tablet {
+    display: block;
+    width: 147px;
+    height: 41px;
   }
 }
 
@@ -105,7 +124,17 @@
   }
 
   .page-header__logo-image-wrapper {
-    width: 143px;
+    width: 150px;
+  }
+
+  .page-header__logo-image-tablet {
+    display: none;
+  }
+
+  .page-header__logo-image-desktop {
+    display: block;
+    width: 147px;
+    height: 41px;
   }
 }
 

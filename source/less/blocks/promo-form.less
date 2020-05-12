@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center -69px;
   background-size: 100% 468px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .promo-form__header {
@@ -24,9 +28,10 @@
   .promo-form {
     // height: 308px;
     height: 329px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center -110px;
-    background-size: 1200px 726px;
+    // background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-position: center -110px;
+    // background-size: 1200px 726px;
+    background-image: none;
   }
 
   .promo-form__header {

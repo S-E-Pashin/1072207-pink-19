@@ -23,6 +23,10 @@
   opacity: 0.3;
 }
 
+.logo-pink__img-desktop {
+  display: none;
+}
+
 @media (min-width: @tablet_width) {
   .logo-pink {
     width: 148px;
@@ -35,6 +39,13 @@
   }
 }
 
-// @media (min-width: @desktop_width) {
-// }
-//
+@media (min-width: @desktop_width) {
+  .logo-pink__img-mobile {
+    display: none;
+  }
+
+  .logo-pink__img-desktop {
+    display: block;
+  }
+}
+
