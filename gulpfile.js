@@ -132,7 +132,7 @@ gulp.task("start", gulp.series(
   "build",
   "server"
   ));
-// Задача копирования-по сути переноса
+// Задача копирования-по сути переноса.
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
