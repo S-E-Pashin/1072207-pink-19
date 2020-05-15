@@ -140,7 +140,7 @@ gulp.task("copy", function() {
     "source/js/**",
     "source/*.ico"
     ], {
-      // Сохраняет структуру проекта.
+      // Сохраняет структуру проекта
       base: "source"
     })
     .pipe(gulp.dest("build"));
