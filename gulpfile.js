@@ -19,11 +19,11 @@ var include = require("posthtml-include");
 var del = require("del");
 //
 // Задача которую запустит npm run build из packaje.json
-gulp.task("css", function() {
+gulp.task("css", function () {
   //Верни найдя значения из содержимого файла находящегося в папке...
   return gulp.src("source/less/style.less")
-  // Функция pipe - "труба" вбирает в себя значения от предыдущей задачи и (если есть последующая) передает в себе или последующей функции для обработки в соответствии с заложенным в них функционалом.
-  //.pipe(plumber())-обработчик проверяющий препроцессорные файлы и информирующий о возникновении проблем но посредством него не ломается сборка.
+    // Функция pipe - "труба" вбирает в себя значения от предыдущей задачи и (если есть последующая) передает в себе или последующей функции для обработки в соответствии с заложенным в них функционалом.
+    //.pipe(plumber())-обработчик проверяющий препроцессорные файлы и информирующий о возникновении проблем но посредством него не ломается сборка.
     .pipe(plumber())
     // Карта кода, эта команда получает исходное состояние.
     .pipe(sourcemap.init())
@@ -45,9 +45,10 @@ gulp.task("css", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
 //
 // Создает сервер с содержимым нашего проекта.
-gulp.task("server", function() {
+gulp.task("server", function () {
   //Сервер, инициализуруй со следующими настройками
   server.init({
     //Адрес нахождения файлов для создания сервера.
@@ -65,58 +66,91 @@ gulp.task("server", function() {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("refresh", function(done) {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
-})
+});
+
 // Оптимизация изображения
-gulp.task("images", function(){
+gulp.task("images", function () {
   //на любой вложенности найти такие файлы.
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  //Запускаем библиотеку оптимизации изображений.
-  .pipe(imagemin([
-    // Это свойство значит - сколько раз optipng осуществит прогонов оптимизации - проверить уровень, время оптимизации и принять оптимальное решение можно с помощью полученного вместе с установкой node.js пакета npx(Дает возможность использовать пакеты без их установки.) посредством команды npx gulp images.
-    imagemin.optipng({optimizationLevel: 3}),
-    // оптимизация jpеg. Это свойство постепенно-при загрузке-улучшает качество загружаемых изображений jpeg.
-    imagemin.jpegtran({progressive: true}),
-    // отпимизация svg.
-    imagemin.svgo()
-  ]))
+    //Запускаем библиотеку оптимизации изображений.
+    .pipe(imagemin([
+      // Это свойство значит - сколько раз optipng осуществит прогонов оптимизации - проверить уровень, время оптимизации и принять оптимальное решение можно с помощью полученного вместе с установкой node.js пакета npx(Дает возможность использовать пакеты без их установки.) посредством команды npx gulp images.
+      imagemin.optipng({
+        optimizationLevel: 3
+      }),
+      // оптимизация jpеg. Это свойство постепенно-при загрузке-улучшает качество загружаемых изображений jpeg.
+      imagemin.jpegtran({
+        progressive: true
+      }),
+      // отпимизация svg.
+      imagemin.svgo()
+    ]))
 
-  .pipe(gulp.dest("source/img"))
-})
+    .pipe(gulp.dest("source/img"))
+});
 
-gulp.task ("webp", function() {
+gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-  // выполнить задачу преобразования в webp с получением 90% качества изображений.
-  .pipe(webp({quality: 90}));
-})
+    // выполнить задачу преобразования в webp с получением 90% качества изображений.
+    .pipe(webp({
+      quality: 90
+    }));
+});
+
 // Создание спрайта с СВГ. Запускается командой npx gulp sprite, полученный спрайт мы вставляем в разметку?
-gulp.task("sprite", function() {
+gulp.task("sprite", function () {
   // Искать все иконки
   return gulp.src("source/img/icon-*.svg")
-  //
-  .pipe(svgstore({
-    // Удалит все комментарии в инлайновом СВГ ??
-    inlineSvg: true
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
-})
+    //
+    .pipe(svgstore({
+      // Удалит все комментарии в инлайновом СВГ ??
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
 // ----------?--------------
 // Задача для HTML: Взять файл и добавить в указанное место в разметке. Для выполнения этой задачи необходим плагин posthtml-include. Этот плагин добавит новый тег в HTML, тег - include.В разметке Нужно обернуть спрайт в тег <div style="display: none"><include src="build/img/sprite.svg"></include></div>
 // После необходимо запустить сборку спрайта и его вставку в html командой - npx gulp sprite && npx gulp html
-gulp.task("html", function() {
+gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(posthtml([
-    // Добавляю плагин include для добавления одноименного тега.
-    include()
-  ]))
-  .pipe(gulp.dest("build"));
-})
+    .pipe(posthtml([
+      // Добавляю плагин include для добавления одноименного тега.
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+
+// Задача копирования-по сути переноса.
+gulp.task("copy", function () {
+  return gulp.src([
+      "source/fonts/**/*.{woff, woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico"
+    ], {
+      // Сохраняет структуру проекта
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+// gulp.task("clean", function (done) {
+//   del(path.clean.build);
+//   done();
+// });
+
 //Задача для запуска npm run build
 gulp.task("build", gulp.series(
-// Очищаем папку
+  // Очищаем папку
   "clean",
   // Копируем не обработанные файлы которые требуются
   "copy",
@@ -126,32 +160,9 @@ gulp.task("build", gulp.series(
   "sprite",
   // Встраиваем html-include в html на месте тегов include и тем самым заменяем его на всех страницах где он указан.
   "html"
-  ));
+));
 //Задача для запуска npm run start
 gulp.task("start", gulp.series(
   "build",
   "server"
-  ));
-// Задача копирования-по сути переноса.
-gulp.task("copy", function() {
-  return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico"
-    ], {
-      // Сохраняет структуру проекта
-      base: "source"
-    })
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function() {
-  return del("build");
-});
-
-// gulp.task("clean", function (done) {
-//   del(path.clean.build);
-//   done();
-// });
-
+));
