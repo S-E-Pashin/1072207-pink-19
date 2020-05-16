@@ -22,11 +22,13 @@
 }
 
 .advantages__question {
+  width: 210px;
   margin: 0 0 0 0;
   padding: 0;
 }
 
 .advantages__answers {
+  width: 210px;
   margin: 0;
   padding: 0;
 }
@@ -103,12 +105,19 @@
 
 .advantages__description {
   display: block;
+  // ie 11
+  width: 260px;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: @bg_main_color;
+}
+
+.advantages__description-third {
+  // ie 11
+  width: 279px;
 }
 
 .advantages__footer {
@@ -178,6 +187,7 @@
 
   .advantages__description {
     text-align: left;
+    width: 314px;
   }
 
   .advantages__description-third {
@@ -299,6 +309,8 @@
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
+    // ie 11
+    width: 249px;
   }
 
   .advantages__description {

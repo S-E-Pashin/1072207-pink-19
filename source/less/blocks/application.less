@@ -1,5 +1,6 @@
 .application {
-  min-height: 389px;
+  // ie 11
+  // min-height: 389px;
   margin-top: 46px;
   width: 100%;
   // background-color: @bg_third_color;
@@ -45,6 +46,7 @@
   line-height: 24px;
   text-align: center;
   color: @text_main_color;
+  width: 240px;
 }
 
 .application__download:hover {
@@ -60,7 +62,7 @@
 @media (min-width: @tablet_width) {
   .application {
     width: 300px;
-    height: 300px;
+    height: 334px;
   }
 
   .application__wrapper-big {
@@ -77,6 +79,7 @@
   }
 
   .application__available {
+    width: 300px;
     margin-top: 37px;
     font-size: 18px;
   }

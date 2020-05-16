@@ -96,7 +96,9 @@
 
 @media (min-width: @desktop_width) {
   .effect {
-    padding-bottom: 476px;
+    // ie 11
+    // padding-bottom: 476px;
+    min-height: 476px;
     background-color: @bg_second_color;
   }
 
