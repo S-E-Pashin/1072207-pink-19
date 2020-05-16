@@ -13,7 +13,6 @@
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <div class="page-header__logo-image-wrapper">
-              <!-- <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип компании Пинк"> -->
               <svg class="page-header__logo-image page-header__logo-image-mobile" alt="Логотип компании Пинк" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
@@ -112,7 +111,7 @@
                 </picture>
               </a>
               <div class="photo-list__item-wrapper">
-                <p class="photo-list__item-header"><b class="photo-list__item-name">Анна</b> (<!--? ошибка в разметке или дизайнер? разные скобки.-->5 минут назад)</p>
+                <p class="photo-list__item-header"><b class="photo-list__item-name">Анна</b> (5 минут назад)</p>
                 <p class="photo-list__item-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <p class="photo-list__item-counter">Нравится: 215</p>
               </div>
@@ -223,41 +222,39 @@
             <article class="tool__image">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"><!-- обертка Изображение-->
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                 <img class="tool__image-content" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Изображение редактируемой фотографии">
               </picture>
             </article>
-              <!-- Может быть слайдер а может быть в зависимости от активного положения делать видимым один из 3х ползунов а в положении для планшетов флексом сделать их колонкой и они в планшете и пк будут как бы всегда активно нажаты. Обсудить а пока сделать для одного. Подумать позже.  -->
-              <!-- ? Сверстать слайдер и делать его части видимыми при нажатии клавиш а  -->
-            <div class="tool__ranges-action-wrapper"><!-- обертка для переключателей, ползунков, кнопок действий -->
+            <div class="tool__ranges-action-wrapper">
 
-              <div class="tool__selector-ranges"><!--  обертка для переключателя ползунков и ползунков-->
-                <article class="tool__selector-wrapper"><!-- обертка для переключателей-->
-                  <div class="tool__selector tool__selector-crop tool__selector--active"><!--переключатель инструмента-->
+              <div class="tool__selector-ranges">
+                <article class="tool__selector-wrapper">
+                  <div aria-label="Обрезка изображения" class="tool__selector tool__selector-crop tool__selector--active">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"></path>
                       <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
                     </svg>
                   </div>
-                  <div class="tool__selector tool__selector-fill">
+                  <div aria-label="Заливка изображения" class="tool__selector tool__selector-fill">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"></path>
                       <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
                       <rect y="40" width="48" height="3"></rect>
                     </svg>
                   </div>
-                  <div class="tool__selector tool__selector-contrast">
+                  <div aria-label="Изменение контраста изображения" class="tool__selector tool__selector-contrast">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                       <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
                       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
                     </svg>
                   </div>
                 </article>
-                <article class="tool__ranges"><!--  контейнер для ползунков -->
-                    <div class="tool__crop tool__range"><!-- Контейнер сеточный для инструмента обрезки -->
-                      <div class="tool__range-controls"><!-- Контейнер для ползунка  -->
-                        <div class="tool__scale"><!-- Линия для ползунка, струна --></div>
-                        <div class="tool__toggle tool__toggle-crop"></div><!-- ползунок -->
+                <article class="tool__ranges">
+                    <div class="tool__crop tool__range">
+                      <div class="tool__range-controls">
+                        <div class="tool__scale"></div>
+                        <div class="tool__toggle tool__toggle-crop"></div>
                       </div>
                     </div>
                     <div class="tool__fill tool__range">
@@ -272,12 +269,10 @@
                         <div class="tool__toggle tool__toggle-contrast"></div>
                       </div>
                     </div>
-                  <!--  -->
                 </article>
               </div>
-              <!--  -->
 
-              <article class="tool__action"><!--  обертка для кнопок действий-->
+              <article class="tool__action">
                 <div class="tool__action-upload">
                   <button class="tool__button-upload tool__button" type="button">Запостить</button>
                 </div>
@@ -356,7 +351,6 @@
               </a>
             </li>
             <li class="social-list__item">
-              <!-- Какой значек соц сети неизвестно -->
               <a class="social-list__link social-list__link-youtube" href="#" aria-label="Ссылка на Ютуб">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                   <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
@@ -367,11 +361,10 @@
         </div>
         <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link-academy" aria-label="Перейти на сайт разработчика HTML Academy" href="https://htmlacademy.ru/intensive/adaptive">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"></path>
             </svg>
-
           </a>
         </div>
       </div>

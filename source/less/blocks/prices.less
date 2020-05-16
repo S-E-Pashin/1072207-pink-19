@@ -21,7 +21,6 @@
 .prices__table {
   border-collapse: collapse;
   background-color: @bg_second_color;
-
   transform: translateX(-410px);
 }
 
@@ -115,10 +114,6 @@
   width: 31px;
   height: 21px;
   margin: 0 17px 0 0;
-  // background-image: url("../img/icon-yes.svg");
-  // background-repeat: no-repeat;
-  // background-size: 30px;
-  // background-color: greenyellow;
 }
 
 .prices__item-on svg {
@@ -131,8 +126,6 @@
   width: 27px;
   height: 26px;
   margin: 0 18px 5px 0;
-  // background-image: url("../img/icon-no.svg");
-  // background-repeat: no-repeat;
 }
 
 .prices__switch-box {
@@ -286,188 +279,3 @@
     font-size: 18px;
   }
 }
-// ---------------------------------
-//Код старый.
-// .prices {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: start;
-//   align-items: center;
-//   width: 100%;
-//   height: 493px;
-//   padding-top: 119px;
-//   background-color: @bg_second_color;
-//   overflow: hidden;
-//   background-color: green;
-//   outline: yellow solid 5px;
-// }
-
-// .prices__wrapper {
-//   width: 280px;
-//   //Скрываю, не видно что тянется, правильно ли?
-//   // overflow: hidden;
-// }
-
-// .prices__table {
-//   border-collapse: collapse;
-//   background-color: @bg_second_color;
-
-//   transform: translateX(-437px);
-// }
-
-// .prices__header-wrapper {
-//   text-transform: uppercase;
-// }
-
-// .prices__item-head {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-
-//   width: 276px;
-//   height: 94px;
-
-//   font-size: 18px;
-//   line-height: 30px;
-//   font-weight: 700;
-//   text-align: center;
-//   color: @text_main_color;
-//   background-color: @bg_main_color;
-// }
-
-// .prices__item-head p {
-//   margin: 0;
-// }
-
-// .prices__item-head span {
-//   font-size: 24px;
-//   line-height: 30px;
-//   font-weight: 300;
-//   text-align: center;
-//   text-transform: uppercase;
-//   color: @text_main_color;
-// }
-
-// .prices__row-wrapper td {
-//   border: 2px solid @border_main_color;
-// }
-
-// .prices__product {
-//   width: 153px;
-//   height: 45px;
-
-//   font-size: 14px;
-//   line-height: 30px;
-//   font-weight: 400;
-//   text-align: left;
-//   color: @bg_main_color;
-// }
-
-// .prices__item {
-//   position: relative;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 276px;
-//   height: 59px;
-// }
-
-// .prices__item-name {
-//   // Управляю изменением положения
-//   // display: none;
-//   width: 140px;
-//   // центрую-калибрую
-//   margin-right: 70px;
-//   margin-left: 22px;
-// }
-
-// .prices__item-name p {
-//   font-size: 14px;
-//   line-height: 30px;
-//   font-weight: 400;
-//   text-align: left;
-//   text-transform: uppercase;
-//   color: @bg_main_color;
-// }
-
-// .prices__item-on {
-//   width: 31px;
-//   height: 21px;
-//   margin: 0 auto;
-
-//   background-image: url("../img/icon-yes.svg");
-//   background-repeat: no-repeat;
-// }
-
-// .prices__item-off {
-//   width: 27px;
-//   height: 26px;
-//   margin: 0 auto;
-
-//   background-image: url("../img/icon-no.svg");
-//   background-repeat: no-repeat;
-// }
-
-// .prices__switch-box {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   width: 56px;
-//   height: 6px;
-//   margin: 45px auto;
-//   padding-left: 0;
-
-//   list-style: none;
-// }
-
-// .prices__switch-slide {
-//   width: 6px;
-//   height: 6px;
-//   padding: 0;
-//   background-color: #283645;
-//   opacity: 0.3;
-//   border-radius: 50%;
-//   box-sizing: content-box;
-// }
-
-// .prices__switch-slide--active {
-//   width: 6px;
-//   height: 6px;
-//   background-color: #ffffff;
-//   opacity: 1;
-//   border: 3px solid #283645;
-//   box-sizing: content-box;
-// }
-
-// @media (min-width: @tablet_width) {
-//   .prices__wrapper {
-//     width: 660px;
-//   }
-
-//   .prices__table {
-//     transform: translateX(-167px) scale(0.65);
-//   }
-
-//   .prices__item-name {
-//     display: none;
-//   }
-
-//   .prices__switch-box {
-//     display: none;
-//   }
-// }
-
-
-// @media (min-width: @desktop_width) {
-//   .prices__wrapper {
-//     width: 960px;
-//   }
-
-
-//   .prices__table {
-//     transform: translateX(53px) scale(1);
-//   }
-// }
