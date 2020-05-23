@@ -473,11 +473,15 @@
   border-color: @text_third_color;
 }
 
-.form label:hover::before {
+.form__progress-input:hover + label::before,
+.form__progress-input:focus + label::before,
+.form__radio-input:hover + label::before,
+.form__radio-input:focus + label::before {
   border-color: @bg_main_color;
 }
 
-.form label:active::before {
+.form__progress-input:active + label::before,
+.form__radio-input:active + label::before {
   border-color: @text_third_color;
 }
 
